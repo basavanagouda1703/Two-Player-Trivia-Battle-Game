@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Player Trivia Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="screen-setup" class="screen">
+  <h2>Player Setup</h2>
+  <input id="player1" placeholder="Player 1 Name">
+  <input id="player2" placeholder="Player 2 Name">
+  <button id="startGame">Start Game</button>
+</div>
+<div id="screen-category" class="screen hidden">
+  <h2 id="roundText"></h2>
+  <select id="categorySelect"></select>
+  <button id="startRound">Start Round</button>
+</div>
+<div id="screen-gameplay" class="screen hidden">
+  <h3 id="info"></h3>
+  <p id="scores"></p>
+  <h4 id="question"></h4>
+  <div id="options"></div>
+  <button id="nextBtn" disabled>Next</button>
+</div>
+<div id="screen-summary" class="screen hidden">
+  <h2>Round Completed</h2>
+  <button id="nextRound">Next Round</button>
+  <button id="endGame">End Game</button>
+</div>
+<div id="screen-result" class="screen hidden">
+  <h2>Final Result</h2>
+  <p id="finalScores"></p>
+  <h3 id="winner"></h3>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
